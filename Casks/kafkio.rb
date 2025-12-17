@@ -1,6 +1,6 @@
 cask "kafkio" do
-  version "2.1.2"
-  sha256 "76f76cfae16a7388084c89563629c516f42aa60396c145938ae634d8e5e38ad4"
+  version "2.1.3"
+  sha256 "483c944ddd4087c0c19a78a61ed97544c821cf92935c252f9eaba0edc40df18e"
 
   url "https://kafkio.com/download/kafkio/#{version}/KafkIO-macos-#{version}-x64.pkg"
   name "KafkIO"
