@@ -1,8 +1,8 @@
 cask "kafkio" do
-  version "2.1.8"
-  sha256 "a477fe4a71d9c27324a1ee666c4f76d4caaf18ee90710b5a9d0c20ea0bcbed53"
+  version "2.1.10"
+  sha256 "7055ba7ab70a4f332bb6b4353b5a761277cd03f6f21200ed34d8699a39aa644c"
 
-  url "https://kafkio.com/download/kafkio/2.1.8/KafkIO-macos-2.1.8-x64.pkg"
+  url "https://kafkio.com/download/kafkio/2.1.10/KafkIO-macos-2.1.10-x64.pkg"
   name "KafkIO"
   desc "Fast, easy Apache Kafka GUI for engineers and administrators"
   homepage "https://kafkio.com"
