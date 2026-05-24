@@ -4,27 +4,16 @@ cask "kafkio" do
   app_name = "KafkIO"
   homepage_url = "https://kafkio.com"
 
-  base_url = "https://kafkio.com/download/kafkio/#{version}"
+  arch arm: "arm64", intel: "x64"
 
-  arm64_url  = "#{base_url}/KafkIO-macos-#{version}-arm64.dmg"
-  x64_url    = "#{base_url}/KafkIO-macos-#{version}-x64.dmg"
+  sha256 arm:   "10fc5daada6b304327a1fe6885ab866f795f8419fba12df56a548933617d0dd6", 
+         intel: "a026fa82fc1b21ea9c947e6470df9254c459f0a5893b8749c924b0894a913db0"
 
-  arm64_sha  = "fa026fa82fclop1ea9c947e6470df9254c443f0a5893b8749c924b0894a913db0"
-  x64_sha    = "a026fa82fc1b21ea9c947e6470df9254c459f0a5893b8749c924b0894a913db0"
+  url "https://kafkio.com/download/kafkio/#{version}/KafkIO-macos-#{version}-#{arch}.dmg"
 
   name app_name
   desc "Fast, easy Apache Kafka GUI for engineers and administrators"
   homepage homepage_url
-
-  arch arm64: {
-    url arm64_url,
-    sha256 arm64_sha
-  }
-
-  arch x86_64: {
-    url x64_url,
-    sha256 x64_sha
-  }
 
   app "KafkIO.app"
 
@@ -34,8 +23,6 @@ cask "kafkio" do
 
       Launch it with:
         open /Applications/KafkIO.app
-
-      Or find it in Finder → Applications.
     EOS
   end
 
