@@ -1,13 +1,13 @@
 cask "kafkio" do
-  version "2.1.18"
+  version "2.1.20"
 
   app_name = "KafkIO"
   homepage_url = "https://kafkio.com"
 
   arch arm: "arm64", intel: "x64"
 
-  sha256 arm:   "b5ca115707e41fa977b1e2fabbc02ba3704d08c7acbd591adabe75f7319f3c2f", 
-         intel: "3556c910360118528cc8f65829bbe150d86ab44ae8ca7cc35114d90b96d64794"
+  sha256 arm:   "5b0334e7a450f2d646e9e64ea7cb4876d0a0b20305b05ede58a82a562f7d70e1", 
+         intel: "1784b1ea917968dd49e4a23a479eab86f2d724829b72937b6f54dfca687d5f93"
 
   url "https://kafkio.com/download/kafkio/#{version}/KafkIO-macos-#{version}-#{arch}.dmg"
 
